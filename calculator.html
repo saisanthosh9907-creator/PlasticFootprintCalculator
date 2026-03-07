@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plastic Calculator - Plastic Footprint Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="dashboard">
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h3>Plastic Footprint</h3>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="#calculator" class="active">Plastic Calculator</a></li>
+                    <li><a href="profile.html">Profile</a></li>
+                    <li><a href="#" id="logout">Logout</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <main class="main-content">
+            <header class="page-header">
+                <h1>Plastic Calculator</h1>
+            </header>
+            <div class="calculator-form">
+                <form id="plasticForm">
+                    <div class="form-group">
+                        <label for="bottles">Plastic bottles used per day</label>
+                        <input type="number" id="bottles" min="0" value="0">
+                    </div>
+                    <div class="form-group">
+                        <label for="bags">Plastic bags used per day</label>
+                        <input type="number" id="bags" min="0" value="0">
+                    </div>
+                    <div class="form-group">
+                        <label for="straws">Plastic straws used per day</label>
+                        <input type="number" id="straws" min="0" value="0">
+                    </div>
+                    <div class="form-group">
+                        <label for="containers">Plastic food containers per day</label>
+                        <input type="number" id="containers" min="0" value="0">
+                    </div>
+                    <div class="form-group">
+                        <label for="cups">Plastic cups per day</label>
+                        <input type="number" id="cups" min="0" value="0">
+                    </div>
+                    <button type="submit" class="btn-primary">Calculate</button>
+                </form>
+            </div>
+            <div class="results" id="results" style="display: none;">
+                <h2>Your Plastic Footprint</h2>
+                <div class="result-cards">
+                    <div class="result-card">
+                        <h3>Daily Usage</h3>
+                        <p id="dailyResult">0 items</p>
+                    </div>
+                    <div class="result-card">
+                        <h3>Monthly Usage</h3>
+                        <p id="monthlyResult">0 items</p>
+                    </div>
+                    <div class="result-card">
+                        <h3>Yearly Usage</h3>
+                        <p id="yearlyResult">0 items</p>
+                    </div>
+                </div>
+                <div class="impact">
+                    <h3>Environmental Impact</h3>
+                    <p id="impactText"></p>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progressFill"></div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="calculator.js"></script>
+</body>
+</html>

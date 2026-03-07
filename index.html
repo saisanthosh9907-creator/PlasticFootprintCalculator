@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plastic Footprint Calculator - Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Plastic Footprint Calculator</div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#stats">Statistics</a></li>
+                <li><a href="#benefits">Benefits</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Plastic Footprint Calculator</h1>
+            <p>Discover how your plastic usage affects the planet</p>
+            <a href="login.html" class="btn-primary">Start Calculating</a>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <div class="container">
+            <h2>Why Plastic Pollution is Dangerous</h2>
+            <p>Plastic pollution is one of the most pressing environmental issues of our time. Every year, millions of tons of plastic waste enter our oceans, harming marine life and ecosystems. Plastic doesn't biodegrade; it breaks down into microplastics that contaminate our food chain and water sources.</p>
+        </div>
+    </section>
+
+    <section id="stats" class="section">
+        <div class="container">
+            <h2>Plastic Pollution Statistics</h2>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <h3>8 Million Tons</h3>
+                    <p>Plastic enters oceans annually</p>
+                </div>
+                <div class="stat-card">
+                    <h3>100,000</h3>
+                    <p>Marine animals die from plastic each year</p>
+                </div>
+                <div class="stat-card">
+                    <h3>500 Years</h3>
+                    <p>Time for plastic to decompose</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="benefits" class="section">
+        <div class="container">
+            <h2>Benefits of Reducing Plastic</h2>
+            <ul class="benefits-list">
+                <li>Protect marine life and ecosystems</li>
+                <li>Reduce pollution in our food and water</li>
+                <li>Conserve natural resources</li>
+                <li>Improve public health</li>
+                <li>Contribute to a sustainable future</li>
+            </ul>
+            <a href="login.html" class="btn-secondary">Calculate Your Impact</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Plastic Footprint Calculator. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script>
+        // Smooth scroll animations
+        gsap.registerPlugin(ScrollTrigger);
+
+        gsap.from(".hero-content", { duration: 1, y: 50, opacity: 0 });
+        gsap.from(".section", { duration: 1, y: 50, opacity: 0, stagger: 0.2, scrollTrigger: ".section" });
+    </script>
+</body>
+</html>

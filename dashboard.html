@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Plastic Footprint Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="dashboard">
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h3>Plastic Footprint</h3>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#dashboard" class="active">Dashboard</a></li>
+                    <li><a href="calculator.html">Plastic Calculator</a></li>
+                    <li><a href="profile.html">Profile</a></li>
+                    <li><a href="#" id="logout">Logout</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <main class="main-content">
+            <header class="page-header">
+                <h1>Dashboard</h1>
+            </header>
+            <div class="dashboard-grid">
+                <div class="card">
+                    <h3>Daily Plastic Usage</h3>
+                    <p id="dailyUsage">0 items</p>
+                </div>
+                <div class="card">
+                    <h3>Monthly Plastic Usage</h3>
+                    <p id="monthlyUsage">0 items</p>
+                </div>
+                <div class="card">
+                    <h3>Yearly Plastic Usage</h3>
+                    <p id="yearlyUsage">0 items</p>
+                </div>
+                <div class="card">
+                    <h3>Eco Score</h3>
+                    <p id="ecoScore">Calculating...</p>
+                </div>
+            </div>
+            <div class="chart-container">
+                <canvas id="usageChart"></canvas>
+            </div>
+            <div class="tips-section">
+                <h2>Plastic Reduction Tips</h2>
+                <ul>
+                    <li>Switch to reusable bottles and containers</li>
+                    <li>Use cloth shopping bags</li>
+                    <li>Avoid plastic straws and utensils</li>
+                    <li>Choose products with minimal packaging</li>
+                </ul>
+            </div>
+            <div class="awareness-message">
+                <p>Every small change you make helps protect our planet. Keep up the great work!</p>
+            </div>
+        </main>
+    </div>
+    <script src="dashboard.js"></script>
+</body>
+</html>
